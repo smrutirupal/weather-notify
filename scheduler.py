@@ -12,8 +12,7 @@ class IntervalScheduler:
     def start(self):
         if not self.thread or not self.thread.is_alive():
             self.stop_event.clear()
-            self.thread = threading.Thread(target=self._run)
-            self.thread.daemon = True
+            self.thread = threading.Thread(target=self._run, daemon=True)
             self.thread.start()
 
     def _run(self):
