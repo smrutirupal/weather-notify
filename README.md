@@ -40,7 +40,6 @@ pip install -r requirements.txt
 # Create environment file
 echo "OPENWEATHER_API_KEY=your_api_key_here" > .env
 
-# Add a 64x64 PNG icon named icon.png in project root
 ```
 
 ⚙️ Configuration
